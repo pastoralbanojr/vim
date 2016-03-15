@@ -8,10 +8,14 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Insert New Vundle Plugins Here
 Plugin 'pangloss/vim-javascript'
-Plugin 'javascript-libraries-syntax.vim'
 Plugin 'command-t'
-
+Plugin 'jshint2.vim'
+Plugin 'ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'vim-autoclose/plugin'
+Plugin 'javascript-libraries-syntax.vim'
+" Plugin 'autoclose/plugin'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " Vundle END
@@ -22,9 +26,6 @@ colorscheme Monokai
 
 " Show Line Number 
 set nu
-
-" Pasting
-set paste
 
 " Tab Settings
 set ts=2
@@ -38,11 +39,6 @@ else
 	set tabstop=2
 	set shiftwidth=2
 endif
-
-" Insert Other Plugins Here
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-set runtimepath^=~/.vim/bundle/javascript-libraries-syntax.vim
-set runtimepath+=~/.vim/bundle/jshint2.vim/
 
 autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
 autocmd BufReadPre *.js let b:javascript_lib_use_underscore = 1

@@ -1,7 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/jralbano/scm/brams/public/resources/scripts'
-let g:netrw_dirhist_2='/home/jralbano/scm/brams/public/resources/scripts/src'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/jralbano/scm/brams'
+let g:netrw_dirhist_2='/home/jralbano/scm/brams/config'
 let g:netrw_dirhist_3='/home/jralbano/scm/brams'
-let g:netrw_dirhist_4='/home/jralbano/scm/brams/dist'
-let g:netrw_dirhist_5='/home/jralbano/scm/brams'
