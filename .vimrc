@@ -16,6 +16,9 @@ Plugin 'surround'
 Plugin 'snipmate'
 Plugin 'misc'
 Plugin 'colorscheme-switcher'
+Plugin 'typescript-vim'
+Plugin 'burnettk/vim-angular'
+Plugin 'isRuslan/vim-es6'
 " Plugin 'autoclose/plugin'
 
 call vundle#end()            " required
@@ -61,7 +64,10 @@ nnoremap tl :tablast<CR>
 
 " Colorscheme
 colorscheme Monokai 
-colorscheme inkpot 
+colorscheme gentooish
+" colorscheme lilydjwg_dark
+" colorscheme wombat256
+" colorscheme distinguished
 
 silent! NextColorScheme command and <F8> mapping 
 silent! PrevColorScheme command and <Shift-F8> mapping 
