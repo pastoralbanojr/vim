@@ -56,6 +56,7 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\.so$\|\.dat$|\.DS_Store$'
   \ }
 
+" Tab Key Mapping
 nnoremap tn :tabnew<Space>
 nnoremap tk :tabnext<CR>
 nnoremap tj :tabprev<CR>
@@ -71,4 +72,6 @@ colorscheme gentooish
 
 silent! NextColorScheme command and <F8> mapping 
 silent! PrevColorScheme command and <Shift-F8> mapping 
+
+
 
