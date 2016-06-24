@@ -19,6 +19,9 @@ Plugin 'colorscheme-switcher'
 Plugin 'typescript-vim'
 Plugin 'burnettk/vim-angular'
 Plugin 'isRuslan/vim-es6'
+Plugin 'PaperColor'
+Plugin 'nerdtree'
+Plugin 'sparkup'
 " Plugin 'autoclose/plugin'
 
 call vundle#end()            " required
@@ -29,7 +32,7 @@ filetype plugin indent on    " required
 set smartindent
 " Dont Generate .swp files
 set noswapfile
-" Show Line Number 
+" Show Line Number
 set nu
 
 " Tab Settings
@@ -63,15 +66,16 @@ nnoremap tj :tabprev<CR>
 nnoremap th :tabfirst<CR>
 nnoremap tl :tablast<CR>
 
+nnoremap nt :NERDTree<CR>
+
 " Colorscheme
-colorscheme Monokai 
-colorscheme gentooish
+ colorscheme Monokai
+" colorscheme PaperColor
+ colorscheme gentooish
 " colorscheme lilydjwg_dark
 " colorscheme wombat256
 " colorscheme distinguished
 
-silent! NextColorScheme command and <F8> mapping 
-silent! PrevColorScheme command and <Shift-F8> mapping 
-
-
+silent! NextColorScheme command and <F8> mapping
+silent! PrevColorScheme command and <Shift-F8> mapping
 
