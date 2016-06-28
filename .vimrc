@@ -66,7 +66,12 @@ nnoremap tj :tabprev<CR>
 nnoremap th :tabfirst<CR>
 nnoremap tl :tablast<CR>
 
-nnoremap nt :NERDTree<CR>
+function Nerdmode()
+  :bd 
+  :NERDTree
+endfunction
+
+nnoremap nt :call Nerdmode()<CR> 
 
 " Colorscheme
  colorscheme Monokai
