@@ -1,5 +1,3 @@
-set nocompatible              " be iMproved, required
-
 " Vundle START
 filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -7,22 +5,18 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Insert New Vundle Plugins Here
-Plugin 'pangloss/vim-javascript'
-Plugin 'command-t'
-Plugin 'jshint2.vim'
-Plugin 'ctrlp.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'surround'
-Plugin 'snipmate'
-Plugin 'misc'
-Plugin 'colorscheme-switcher'
-Plugin 'typescript-vim'
-Plugin 'burnettk/vim-angular'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'wincent/command-t'
+Plugin 'msanders/snipmate.vim'
+Plugin 'xolox/vim-misc'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'rstacruz/sparkup'
 Plugin 'isRuslan/vim-es6'
-Plugin 'PaperColor'
-Plugin 'nerdtree'
-Plugin 'sparkup'
-" Plugin 'autoclose/plugin'
+Plugin 'burnettk/vim-angular'
+Plugin 'Shutnik/jshint2.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
