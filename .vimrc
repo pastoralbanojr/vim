@@ -17,6 +17,8 @@ Plugin 'rstacruz/sparkup'
 Plugin 'isRuslan/vim-es6'
 Plugin 'burnettk/vim-angular'
 Plugin 'Shutnik/jshint2.vim'
+Plugin 'vim-scripts/tComment'
+Plugin 'ntpeters/vim-better-whitespace'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -61,11 +63,11 @@ nnoremap th :tabfirst<CR>
 nnoremap tl :tablast<CR>
 
 function Nerdmode()
-  :bd 
+  :bd
   :NERDTree
 endfunction
 
-nnoremap nt :call Nerdmode()<CR> 
+nnoremap nt :call Nerdmode()<CR>
 
 " Colorscheme
  colorscheme Monokai
