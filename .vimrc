@@ -19,6 +19,9 @@ Plugin 'burnettk/vim-angular'
 Plugin 'Shutnik/jshint2.vim'
 Plugin 'vim-scripts/tComment'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'xolox/vim-colorscheme-switcher'
+Plugin 'mxw/vim-jsx'
+Plugin 'vim-airline/vim-airline'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -76,7 +79,10 @@ nnoremap nt :call Nerdmode()<CR>
 " colorscheme lilydjwg_dark
 " colorscheme wombat256
 " colorscheme distinguished
+" colorscheme burnttoast256
 
 silent! NextColorScheme command and <F8> mapping
 silent! PrevColorScheme command and <Shift-F8> mapping
+
+let g:Powerline_symbols = 'fancy'
 
