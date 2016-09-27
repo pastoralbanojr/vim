@@ -22,6 +22,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'xolox/vim-colorscheme-switcher'
 Plugin 'mxw/vim-jsx'
 Plugin 'vim-airline/vim-airline'
+Plugin 'terryma/vim-expand-region'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -86,3 +87,37 @@ silent! PrevColorScheme command and <Shift-F8> mapping
 
 let g:Powerline_symbols = 'fancy'
 
+" Disable Arrow keys in Escape mode
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+" ignore ctrlp node_modules and others
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files --exclude-standard -co |& egrep -v "\.(png|jpg|jpeg|gif)$|node_modules"']
+
+" Jay-r Albano September 27, 2016
+" This will make you Vim faster
+
+let mapleader = "\<Space>"
+
+" Quick CtrlP: Space + o
+nnoremap <Leader>o :CtrlP<CR>
+" Save File Hack: Space + W
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+" Visual Mode Hack: doouble space
+nmap <Leader><Leader> V
+" Quit Hack: prevent that vim window from popping up
+map q: :q
+" Selection Hack: v vv vvv typing
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
+" press n button to search again the same keyword you searched
+vnoremap <silent> s //e<C-r>=&selection=='exclusive'?'+1':''<CR><CR>
+    \:<C-u>call histdel('search',-1)<Bar>let @/=histget('search',-1)<CR>gv
+omap s :normal vs<CR>
+" I can paste multiple lines multiple times with simple ppppp.
+vnoremap <silent> y y`]
+vnoremap <silent> p p`]
+nnoremap <silent> p p`]
