@@ -71,12 +71,12 @@ function Nerdmode()
   :NERDTree
 endfunction
 
-nnoremap nt :call Nerdmode()<CR>
+nnoremap <Space>n :call Nerdmode()<CR>
 
 " Colorscheme
  colorscheme Monokai
 " colorscheme PaperColor
- colorscheme gentooish
+" colorscheme gentooish
 " colorscheme lilydjwg_dark
 " colorscheme wombat256
 " colorscheme distinguished
@@ -95,6 +95,11 @@ map <right> <nop>
 
 " ignore ctrlp node_modules and others
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files --exclude-standard -co |& egrep -v "\.(png|jpg|jpeg|gif)$|node_modules"']
+" Ignore some folders and files for CtrlP indexing
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.yardoc\|node_modules\|log\|tmp$',
+  \ 'file': '\.so$\|\.dat$|\.DS_Store$'
+  \ }
 
 " Jay-r Albano September 27, 2016
 " This will make you Vim faster
