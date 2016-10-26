@@ -23,6 +23,8 @@ Plugin 'xolox/vim-colorscheme-switcher'
 Plugin 'mxw/vim-jsx'
 Plugin 'vim-airline/vim-airline'
 Plugin 'terryma/vim-expand-region'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -126,3 +128,9 @@ omap s :normal vs<CR>
 vnoremap <silent> y y`]
 vnoremap <silent> p p`]
 nnoremap <silent> p p`]
+
+" Disable folding in Markdown file editing
+let g:vim_markdown_folding_disabled = 1
+
+" Faster ESC Key substitute
+imap <C-L> <Esc>
