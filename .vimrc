@@ -134,3 +134,8 @@ let g:vim_markdown_folding_disabled = 1
 
 " Faster ESC Key substitute
 imap <C-L> <Esc>
+
+" Toggle set paste
+set pastetoggle=<F2>
+
+
