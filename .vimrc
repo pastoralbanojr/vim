@@ -138,4 +138,6 @@ imap <C-L> <Esc>
 " Toggle set paste
 set pastetoggle=<F2>
 
+" EJS Syntax Highlight
+au BufNewFile,BufRead *.ejs set filetype=html
 
