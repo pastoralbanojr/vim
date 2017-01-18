@@ -6,17 +6,17 @@
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
+#### Replace .vimrc file
+
+```
+cp .vimrc ~/.vimrc
+```
+
 #### Install .vimrc plugins
 
 ```
 vim
 :PluginInstall
-```
-
-#### Replace Caps Lock key to Escape key
-
-```
-xmodmap ~/.speedswapper
 ```
 
 #### Major tweaks for repetitive tasks
@@ -30,6 +30,8 @@ switch tab:       tj | tk
 switch first tab: th
 switch last tab:  tl
 select:           v | vv | vvv
+switch window:    ctrl + ww
+switch colorscheme: F8 / Shift+F8
 ```
 
 © Jay-r Albano
