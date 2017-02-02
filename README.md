@@ -34,5 +34,7 @@ switch window:    ctrl + ww
 switch colorscheme: F8 / Shift+F8
 ```
 
+[Split Screen Guide](https://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally)
+
 © Jay-r Albano
 

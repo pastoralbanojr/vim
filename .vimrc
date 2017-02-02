@@ -78,7 +78,7 @@ nnoremap <Space>n :call Nerdmode()<CR>
 " Colorscheme
  colorscheme Monokai
 " colorscheme PaperColor
-" colorscheme gentooish
+ colorscheme gentooish
 " colorscheme lilydjwg_dark
 " colorscheme wombat256
 " colorscheme distinguished
@@ -140,4 +140,13 @@ set pastetoggle=<F2>
 
 " EJS Syntax Highlight
 au BufNewFile,BufRead *.ejs set filetype=html
+
+" More natural vim split screen navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+set splitbelow
+set splitright
 
