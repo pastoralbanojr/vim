@@ -25,6 +25,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'terryma/vim-expand-region'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'vitalk/vim-lesscss'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -38,16 +39,16 @@ set noswapfile
 set nu
 
 " Tab Settings
-set ts=2
-set sw=2
+set ts=4
+set sw=4
 set expandtab
 let _curfile = expand("%:t")
 if _curfile =~ "Makefile" || _curfile =~ "makefile" || _curfile =~ ".*\.mk"
   set noexpandtab
 else
   set expandtab
-  set tabstop=2
-  set shiftwidth=2
+  set tabstop=4
+  set shiftwidth=4
 endif
 
 autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
@@ -138,8 +139,9 @@ imap <C-L> <Esc>
 " Toggle set paste
 set pastetoggle=<F2>
 
-" EJS Syntax Highlight
+" EJS,marko Syntax Highlight
 au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.marko set filetype=html
 
 " More natural vim split screen navigation
 nnoremap <C-J> <C-W><C-J>
