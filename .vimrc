@@ -39,16 +39,16 @@ set noswapfile
 set nu
 
 " Tab Settings
-set ts=4
-set sw=4
+set ts=2
+set sw=2
 set expandtab
 let _curfile = expand("%:t")
 if _curfile =~ "Makefile" || _curfile =~ "makefile" || _curfile =~ ".*\.mk"
   set noexpandtab
 else
   set expandtab
-  set tabstop=4
-  set shiftwidth=4
+  set tabstop=2
+  set shiftwidth=2
 endif
 
 autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
@@ -142,6 +142,7 @@ set pastetoggle=<F2>
 " EJS,marko Syntax Highlight
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.marko set filetype=html
+au BufNewFile,BufRead *.vue set filetype=html
 
 " More natural vim split screen navigation
 nnoremap <C-J> <C-W><C-J>
