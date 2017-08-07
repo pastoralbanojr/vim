@@ -79,11 +79,12 @@ nnoremap <Space>n :call Nerdmode()<CR>
 " Colorscheme
  colorscheme Monokai
 " colorscheme PaperColor
- colorscheme gentooish
+" colorscheme gentooish
 " colorscheme lilydjwg_dark
 " colorscheme wombat256
 " colorscheme distinguished
 " colorscheme burnttoast256
+colorscheme antares 
 
 silent! NextColorScheme command and <F8> mapping
 silent! PrevColorScheme command and <Shift-F8> mapping
