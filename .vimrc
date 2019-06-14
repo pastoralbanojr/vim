@@ -156,3 +156,8 @@ set splitright
 
 :syntax enable
 
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+
+xnoremap K :move '<-2<CR>gv=gv
+xnoremap J :move '>+1<CR>gv=gv
+
