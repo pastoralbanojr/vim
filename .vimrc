@@ -26,6 +26,10 @@ Plugin 'terryma/vim-expand-region'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'vitalk/vim-lesscss'
+Plugin 'stephpy/vim-php-cs-fixer'
+Plugin 'sbdchd/neoformat'
+Plugin 'junegunn/fzf', { 'dir': '/usr/local/Cellar/fzf' }
+Plugin 'junegunn/fzf.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -84,7 +88,8 @@ nnoremap <Space>n :call Nerdmode()<CR>
 " colorscheme wombat256
 " colorscheme distinguished
 " colorscheme burnttoast256
-colorscheme antares 
+" colorscheme antares 
+colorscheme onedark
 
 silent! NextColorScheme command and <F8> mapping
 silent! PrevColorScheme command and <Shift-F8> mapping
@@ -160,4 +165,30 @@ let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 
 xnoremap K :move '<-2<CR>gv=gv
 xnoremap J :move '>+1<CR>gv=gv
+
+let NERDTreeShowHidden=1
+
+set linespace=10
+set guifont=Monaco:h14
+
+let g:php_cs_fixer_level = "psr2"
+
+" Auto fix php files with psr2
+autocmd BufWritePost *.php silent! call PhpCsFixerFixFile()
+
+" Auto fix javascript files
+autocmd BufWritePre *.js Neoformat
+
+let g:neoformat_run_all_formatters = 1
+
+:set modifiable
+:set write
+
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
 
